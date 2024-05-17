@@ -1,0 +1,30 @@
+((The word Coordinate means the position of the chess piece in the chess board in terms of row and column ! ))
+
+First of all the main logic is tracking the chess pieces 
+
+All chess pieces are being tracked by the class ChessPieceDictionary. 
+Remember this class store all the initial positions as well the names of the chess piece in a dictionary.
+
+Then we use this dictionary in a variety of ways 
+
+Our logic starts in GAMEMANAGER script
+
+It first raycast and check if the mouse is over a chess piece.
+If it is then it gets the chess piece name and then it will send the name as well as it's coordinates to selectedChessPiece function
+
+Then this function will run and in a switch case this function will send the coordinates of chess piece and the type of function to be used in ChessPiece class
+
+
+Our chessPiece class is the HERO ! 
+
+It gets the coordinates and then it's function will run and will do complex calculations to find all possible moves 
+This all possible moves will be stored in a list ! 
+
+Then it will return it to our selectedChessPiece function
+
+Chess piece class also note down all the 
+
+After that HighlightChessPiece will highlight the available positions as well as if there is enemy then  it will red them 
+
+
+
